@@ -1,0 +1,13 @@
+D:\Bhavika\Github\APIDemo\GitWebapi\bin\Debug\netcoreapp2.0\GitWebapi.deps.json
+D:\Bhavika\Github\APIDemo\GitWebapi\bin\Debug\netcoreapp2.0\GitWebapi.runtimeconfig.json
+D:\Bhavika\Github\APIDemo\GitWebapi\bin\Debug\netcoreapp2.0\GitWebapi.runtimeconfig.dev.json
+D:\Bhavika\Github\APIDemo\GitWebapi\bin\Debug\netcoreapp2.0\GitWebapi.dll
+D:\Bhavika\Github\APIDemo\GitWebapi\bin\Debug\netcoreapp2.0\GitWebapi.pdb
+D:\Bhavika\Github\APIDemo\GitWebapi\obj\Debug\netcoreapp2.0\GitWebapi.csprojResolveAssemblyReference.cache
+D:\Bhavika\Github\APIDemo\GitWebapi\obj\Debug\netcoreapp2.0\GitWebapi.csproj.CoreCompileInputs.cache
+D:\Bhavika\Github\APIDemo\GitWebapi\obj\Debug\netcoreapp2.0\GitWebapi.AssemblyInfoInputs.cache
+D:\Bhavika\Github\APIDemo\GitWebapi\obj\Debug\netcoreapp2.0\GitWebapi.AssemblyInfo.cs
+D:\Bhavika\Github\APIDemo\GitWebapi\obj\Debug\netcoreapp2.0\GitWebapi.dll
+D:\Bhavika\Github\APIDemo\GitWebapi\obj\Debug\netcoreapp2.0\GitWebapi.pdb
+D:\Bhavika\Github\APIDemo\GitWebapi\bin\Debug\netcoreapp2.0\GitWebapi.xml
+D:\Bhavika\Github\APIDemo\GitWebapi\obj\Debug\netcoreapp2.0\GitWebapi.xml

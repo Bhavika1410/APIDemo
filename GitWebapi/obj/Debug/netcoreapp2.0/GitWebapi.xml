@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GitWebapi</name>
+    </assembly>
+    <members>
+        <member name="M:GitWebApi.Controllers.ProductController.Get">
+            <summary>
+            List of all Products
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GitWebApi.Controllers.ProductController.Get(System.Int32)">
+            <summary>
+            Details of product based on specific ID
+            </summary>
+            <param name="id">Mandatory</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
