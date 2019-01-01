@@ -17,5 +17,17 @@
             <param name="id">Mandatory</param>
             <returns></returns>
         </member>
+        <member name="M:GitWebApi.Controllers.UserController.GetUsers">
+            <summary>
+            Get list of users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GitWebApi.Controllers.UserController.AddUser(GitWebApi.Models.User)">
+            <summary>
+            Add User
+            </summary>
+            <returns></returns>
+        </member>
     </members>
 </doc>

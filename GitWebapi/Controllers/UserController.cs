@@ -6,6 +6,7 @@ using GitWebApi.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 using System.Web.Http.Cors;
+using System;
 
 namespace GitWebApi.Controllers
 {
@@ -14,7 +15,12 @@ namespace GitWebApi.Controllers
 
     public class UserController : ControllerBase
     {
-        [HttpGet("UserList")]
+        // GET api/values
+        /// <summary>
+        /// Get list of users
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("GetUsers")]
         public ActionResult GetUsers()
         {
             using (var db = new WebApiContext())
@@ -26,20 +32,34 @@ namespace GitWebApi.Controllers
             }
         }
 
+        // GET api/values
+        /// <summary>
+        /// Add User
+        /// </summary>
+        /// <returns></returns>
+        [Route("AddUser")]
         [HttpPost]
-        public ActionResult AddUser([FromBody] User user)
+        public ActionResult AddUser([FromBody]User user)
         {
-            if (!ModelState.IsValid)
+            try
             {
-                return BadRequest(ModelState);
+                using (var db = new WebApiContext())
+                {
+                    user.IsActive = true;
+                    user.IsDelete = false;
+                    var id = db.Users.Add(user);
+                    db.SaveChanges();
+                    var list = db.Users.ToList();
+                    if (id != null)
+                        return Ok(id);
+
+                }
             }
-            using (var db = new WebApiContext())
+            catch
             {
-                var id = db.Users.Add(user);
-                if (id != null)
-                    return Ok(id);
-                return NotFound("Error while adding user");
+                // Console.log(ex);
             }
+            return NotFound("Error while adding user");
         }
     }
 }

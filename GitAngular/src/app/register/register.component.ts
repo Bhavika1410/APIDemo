@@ -20,6 +20,11 @@ export class RegisterComponent implements OnInit {
   ngOnInit() {
   }
   register() {
-    console.log(this.user.EmailId + '  ' + this.user.Password + '  ' + this.confirmPass);    
+    console.log(this.user.EmailId + '  ' + this.user.Password + '  ' + this.confirmPass);
+    if (this.user.Password === this.confirmPass) {
+      this.dataService.AddUser(this.user).subscribe(res => {
+        console.log('Record inserted successfully');
+      });
+    }
   }
 }
