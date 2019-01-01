@@ -6,11 +6,12 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using GitWebApi.Models;
 using GitWebApi;
+using System.Web.Http.Cors;
 
 namespace GitWebApi.Controllers
 {
     // [Authorize]
-    
+    [EnableCors(origins: "http://localhost:4200", headers: "*", methods: "*")]
     [Route("api/[controller]")]
     public class ProductController : ControllerBase
     {

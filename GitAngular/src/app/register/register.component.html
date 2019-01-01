@@ -1,0 +1,23 @@
+<div class="error_page">
+  <!--/login-top-->
+  <div class="error-top up">
+    <h2 class="inner-tittle page">Welcome</h2>
+    <div class="login">
+      <h3 class="inner-tittle t-inner">Sign Up</h3>
+        <input type="text" class="text" [(ngModel)]="user.EmailId" name="EmailId" value="E-mail address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail address';}" placeholder="Email Address">
+        <input type="password" value="Password" [(ngModel)]="user.Password" name="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" placeholder="Password">
+        <input type="password" value="Password" [(ngModel)]="confirmPass" name="confirmPass" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'confirmPass';}" placeholder="Confirm Password">
+        <div class="submit"><input type="submit" (click)="register()" value="Sign up"></div>
+        <div class="clearfix"></div>
+        <div class="new">
+          <p class="sign up">Do you have an account yet ? <a href="login.html"> Login here.</a></p>
+          <div class="clearfix"></div>
+        </div>
+    </div>
+  </div>
+  <!--//login-top-->
+</div>
+<!--//login-->
+<!--footer section start-->
+<div class="footer sign">
+</div>
